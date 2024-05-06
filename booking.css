@@ -1,0 +1,66 @@
+.booking-section{
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 50px;
+  height: auto;
+  border: 1px solid rgb(23, 116, 192);
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.b-sec-1{
+  width: 170px;
+  margin: 10px 30px;
+  display: flex;
+}
+.b-sec-1-left{
+  padding: 10px;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.b-sec-1-right{
+  padding: 10px;
+  width: 80%;
+}
+.check-lbl{
+  font-size: 1rem;
+  display: block;
+}
+.inp-box{
+  width: 30%;
+  border: 1px solid rgba(5, 113, 202, 0.24);
+  padding: 3px 6px;
+}
+.inp-box-2{
+  width: 90%;
+  border: 1px solid rgba(5, 113, 202, 0.24);
+  padding: 3px 6px;
+
+}
+.inp-box::placeholder, .inp-box-2::placeholder{
+  font-size: 0.7rem;
+  color: rgba(5, 113, 202, 0.452);
+}
+.ri-calendar-event-fill, .ri-calendar-todo-fill, .ri-account-box-fill{
+  font-size: 1.5rem;
+  color: rgb(5, 114, 202);
+}
+
+.checking-btn{
+  width: 130px;
+  margin: 0 auto;
+  padding: 4px 16px;
+  background-color: rgb(20, 132, 224);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  transition: 0.5s;
+}
+.checking-btn:hover ,.checking-btn:active{
+  background-color: rgb(2, 67, 121);
+
+}

@@ -1,0 +1,8 @@
+@media screen and (max-width: 740px){
+  ul{
+    display: none;
+  }
+  .ri-menu-2-line{
+    display: inline;
+  }
+}

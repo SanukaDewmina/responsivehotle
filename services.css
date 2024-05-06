@@ -1,0 +1,65 @@
+.services{
+  margin-top: 50px;
+  width: 100%;
+  padding: 20px;
+}
+.services-box{
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 40px;
+  justify-content: center;
+  align-items: center;
+}
+.s-box{
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.serv-icon1{
+  width: 20%;
+}
+.serv-name{
+  width: 80%;
+
+}
+.service-text{
+  font-family: "Radio Canada Big", sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  padding-left: 5px;
+}
+
+/* icons styles */
+
+.ri-shield-star-line{
+  font-size: 1.4rem;
+  background-color: rgb(129, 226, 255);
+  color:rgb(1, 115, 150) ;
+  padding: 4px 8px;
+  border-radius: 50%;
+}
+
+.ri-24-hours-line{
+  font-size: 1.4rem;
+  background-color: rgb(255, 182, 231);
+   color: rgb(124, 75, 108);
+  padding: 4px 8px;
+  border-radius: 50%;
+}
+.ri-taxi-fill{
+  font-size: 1.4rem;
+  background-color: rgb(255, 250, 175);
+   color:rgb(177, 165, 1) ;
+  padding: 4px 8px;
+  border-radius: 50%;
+}
+.ri-map-2-line{
+  font-size: 1.4rem;
+  background-color: rgb(144, 255, 162);
+   color: rgb(4, 136, 26);
+  padding: 4px 8px;
+  border-radius: 50%;
+}

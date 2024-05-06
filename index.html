@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="aboutUs.css">
+  <link rel="stylesheet" href="rooms.css">
+  <link rel="stylesheet" href="services.css">
+  <link rel="stylesheet" href="explore.css">
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="booking.css">
+  <link rel="stylesheet" href="bookingform.css">
+  <!-- FONTS ACCESS LINK -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+  <title>HOTEL</title>
+</head>
+<body>
+  <div class="header" id="home">
+    <nav class="nav-bar">
+      <img src="download.svg" alt="">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About us</a></li>
+        <li><a href="#rooms">Rooms</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#explore">Explore</a></li>
+        <li><a href="#contact">Contact us</a></li>
+      </ul>
+      <i class="ri-menu-2-line"  onclick="navbaronoff();"></i>
+
+    </nav>
+
+
+    <div class="content-box">
+      <h2 class="content-text-01">Unwind-in-Style</h2>
+      <h2 class="content-text-02">Where Every Stay Tells a Story <br>
+        <span class="content-text-02-span">Hotel</span><span class="content-text-03-span">Bbay</span> Exclusivity.</h2>
+      <button class="nav-btn" onclick="opennavwindwo2time();">Book Now</button>
+    </div>
+  </div>
+
+  <div class="responsive-nav" id="responsnavbarsection">
+
+    <div class="resp-nav-lis"> <a class="res-text-styl" onclick="navclose();" href="#home">Home</a> </div>
+    <div class="resp-nav-lis"> <a class="res-text-styl" onclick="navclose();" href="#about">About us</a> </div>
+    <div class="resp-nav-lis"> <a class="res-text-styl" onclick="navclose();" href="#rooms">Rooms</a> </div>
+    <div class="resp-nav-lis"> <a class="res-text-styl" onclick="navclose();" href="#services">Services</a>   </div>
+    <div class="resp-nav-lis"> <a class="res-text-styl" onclick="navclose();" href="#explore">Explore</a> </div>
+    <div class="resp-nav-lis"> <a class="res-text-styl" onclick="navclose();" href="#contact">Contact us</a> </div>
+    <div class="resp-nav-lis"><button onclick="navBtnclose();" class="bk-deatails-btn">Your Booking Deatails</button></div>
+  
+  </div>
+
+  <!-- Booking section window -->
+
+  <div class="your-cart" id="booking-card">
+    <div class="cart-section-01">
+      <h1 class="cart-welcome-text">Wellcome To The HotelBbay.</h1>
+    </div>
+    <div class="cart-section-02">
+      <div class="cart-section-02-left">
+        <h2 class="cart-room-text">Checking Deatails</h2>
+        <div class="no-name">
+          <h6 class="chk-txt-styls">Your Check-in Date:</h6>
+          <label id="cart-text1">12</label>
+        </div>
+        <div class="no-name"> 
+          <h6 class="chk-txt-styls">Your Check-out Date:</h6>
+          <label id="cart-text2">15</label>
+        </div>
+        <div class="no-name">
+           <h6 class="chk-txt-styls">Members:</h6>
+           <label id="cart-text3">3</label>
+          </div>
+        
+       
+       
+      </div>
+
+      <div class="cart-section-02-right">
+        <h2 class="cart-room-text">Room Deatails</h2>
+        <div class="no-name">
+          <h6 class="chk-txt-styls">Room:</h6>
+          <label id="cart-text4">1</label>
+        </div>
+        <div class="no-name">
+          <h6 class="chk-txt-styls">Price per Room:</h6>
+          <label id="cart-text5">1</label>
+        </div>
+          
+      </div>
+    </div>
+    <div class="cart-section-03">
+
+      <div>
+        <label id="cart-text6">Total: 25$</label>
+      </div>
+      <div>
+        <button class="cart-ok-btn" onclick="windowopen();">Book Now</button>
+        <button class="cart-close-btn" onclick="windowclose();">Cancel</button>
+      </div>
+
+  
+    </div>
+  </div>
+
+  
+  <div class="booking-section">
+    <div class="b-sec-1"> 
+      <div class="b-sec-1-left">
+         <i class="ri-calendar-event-fill"></i>
+      </div>
+      <div class="b-sec-1-right">
+        <label class="check-lbl" for="">CHECK-IN</label>
+        <input class="inp-box" type="text" placeholder="mm" id="checkin-mm" maxlength="2">
+        <input class="inp-box" type="text" placeholder="dd" id="checkin-dd" maxlength="2">
+        <input class="inp-box" type="text" placeholder="yyyy" id="checkin-yy"maxlength="4">
+      </div>  
+    </div>
+    <div class="b-sec-1"> 
+      <div class="b-sec-1-left">
+        <i class="ri-calendar-todo-fill"></i>
+      </div>
+      <div class="b-sec-1-right">
+        <label class="check-lbl" for="">CHECK-OUT</label>
+        <input class="inp-box" type="text" placeholder="mm" id="checkout-mm" maxlength="2">
+        <input class="inp-box" type="text" placeholder="dd" id="checkout-dd" maxlength="2">
+        <input class="inp-box" type="text" placeholder="yyyy" id="checkout-yyyy" maxlength="4">
+      </div>  
+    </div>
+    <div class="b-sec-1"> 
+      <div class="b-sec-1-left">
+        <i class="ri-account-box-fill"></i>
+      </div>
+      <div class="b-sec-1-right">
+        <label class="check-lbl" for="">GUEST</label>
+        <input class="inp-box-2" type="text" placeholder="Member Count" id="guest-numbers">
+      </div>  
+    </div>
+    <div class="b-sec-1">
+      <button class="checking-btn" onclick="bookingSubmit();">Check-out</button>
+    </div>
+  </div>
+
+  <div class="about" id="about">
+    <div class="about-content">
+      <div class="about-content-img">
+        <img class="ab-img" src="sub-img/about.jpg" alt="">
+      </div>
+      <div class="about-content-details">
+        <h6 class="text01">About us <span class="text01-line">_______</span></h6>
+        <h6 class="text02">The Best Holiday start here!</h6>
+        <p class="text03">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque earum deleniti facere natus explicabo sed doloribus distinctio ducimus quis incidunt.</p>
+        <button class="text-btn">Read More</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="rooms" id="rooms">
+    <div class="room-content-box">
+      <h6 class="text01">OUR LIVING ROOM <span class="text01-line">_______</span></h6>
+      <h6 class="text02">The Most Memorable Rest Time Starts Here.</h6>
+      <div class="room-grid">
+        <div class="grid">
+            <div class="grid-img">
+              <img class="grid-img-property" src="sub-img/room1.jpg" alt="">
+            </div>
+            <div class="grid-text">
+              <h1 class="grid-text1">ocean room</h1>
+              <h1 class="grid-text2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+              <h1 class="grid-text3">starting from $299/night</h1>
+              <button class="grid-btn1">Book Now</button>
+            </div>
+        </div>
+        <div class="grid">
+          <div class="grid-img">
+            <img class="grid-img-property" src="sub-img/room2.jpg" alt="">
+          </div>
+          <div class="grid-text">
+            <h1 class="grid-text1">ocean room</h1>
+            <h1 class="grid-text2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+            <h1 class="grid-text3">starting from $299/night</h1>
+            <button class="grid-btn1">Book Now</button>
+          </div>
+      </div>
+      <div class="grid">
+        <div class="grid-img">
+          <img class="grid-img-property" src="sub-img/room3.jpg" alt="">
+        </div>
+        <div class="grid-text">
+          <h1 class="grid-text1">ocean room</h1>
+          <h1 class="grid-text2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+          <h1 class="grid-text3">starting from $299/night</h1>
+          <button class="grid-btn1">Book Now</button>
+        </div>
+    </div>
+      </div>
+    </div>
+  </div>
+
+ <div class="services" id="services">
+  <h6 class="text01">SERVICES <span class="text01-line">_______</span></h6>
+  <h6 class="text02">Strive Only For The Best.</h6>
+  <div class="services-box">
+      <div class="s-box">
+        <div class="serv-icon1">
+          <i class="ri-shield-star-line"></i>
+        </div>
+        <div class="serv-name">
+          <h5 class="service-text">High Class Securityt</h1>
+        </div>
+      </div>
+      <div class="s-box">
+        <div class="serv-icon1">
+          <i class="ri-24-hours-line"></i>
+        </div>
+        <div class="serv-name">
+          <h5 class="service-text">24 Hours Room Service</h1>
+        </div>
+      </div>
+      <div class="s-box">
+        <div class="serv-icon1">
+          <i class="ri-taxi-fill"></i>
+        </div>
+        <div class="serv-name">
+          <h5 class="service-text">24 Hours Taxi Service</h1>
+        </div>
+      </div>
+      <div class="s-box">
+        <div class="serv-icon1">
+          <i class="ri-map-2-line"></i>
+        </div>
+        <div class="serv-name">
+          <h5 class="service-text">Tourist Guied Support</h1>
+        </div>
+      </div>
+
+  </div>
+ </div>
+
+ <div class="explore" id="explore">
+  <div class="ex-numbers">
+    <div class="num">
+      <h1 class="num1">25+</h1>
+      <h1 class="num2">Properties Available</h1>
+    </div>
+    <div class="num">
+      <h1 class="num1">350+</h1>
+      <h1 class="num2">Booking Completed</h1>
+    </div>
+    <div class="num">
+      <h1 class="num1">600+</h1>
+      <h1 class="num2">Happy Customers</h1>
+    </div>
+  </div>
+ </div>
+ 
+ <div class="footer" id="contact">
+  <div class="footer-content">
+    <div class="con1">
+      <img src="download.svg" alt="">
+      <h2 class="con-title2">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Assumenda nam, similique est, veritatis ex, sapiente molestiae corrupti repellat 
+        esse omnis quasi unde fugit?</h2>
+
+    </div>
+    <div class="con1">
+      <h1 class="con-title">QUICK LINKS</h1>
+      <h2 class="con-title2">Browser Destination</h2>
+      <h2 class="con-title2">Special Offers</h2>
+      <h2 class="con-title2">Room Types & Amenities</h2>
+      <h2 class="con-title2">Customer Reviews & Ratings</h2>
+      <h2 class="con-title2">Travel Tips & Guides</h2>
+    </div>
+    <div class="con1">
+      <h1 class="con-title">OUR SERVICES</h1>
+      <h2 class="con-title2">Concierge Assistance</h2>
+      <h2 class="con-title2">Flexible Booking Options</h2>
+      <h2 class="con-title2">Airports Transfers</h2>
+      <h2 class="con-title2">Wellnes & Recreation</h2>
+    </div>
+    <div class="con1">
+      <h1 class="con-title">CONTACT US</h1>
+      <h2 class="con-title2">HotelBbay@info.com</h2>
+      <i class="ri-facebook-box-fill"></i>
+      <i class="ri-whatsapp-fill"></i>
+      <i class="ri-youtube-fill"></i>
+      <i class="ri-twitter-x-fill"></i>
+    </div>
+  </div>
+ </div>
+ <div class="content-rig-box">
+  <h3 class="content-right">
+    Copyright<i class="ri-copyright-line"></i> 2024 Web Design Mastery.All rights reserved. 
+  </h3>
+ </div>
+
+
+ <script src="script.js"></script>
+</body>
+</html>

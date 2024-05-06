@@ -1,0 +1,63 @@
+.rooms{
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.room-content-box{
+  width: 100%;
+  padding: 0 20px;
+}
+.room-grid{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.grid{
+  margin: 20px 10px;
+  width: 350px;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.075);
+  display: flex;
+  flex-direction: column;
+  height: 310px;
+}
+.grid-img{
+  height: 180px;
+  position: relative;
+  overflow: hidden;
+}
+
+.grid-text{
+  height: 120px;
+  padding-left: 10px;
+}
+
+.grid-img-property{
+  width: 350px;
+  position: absolute;
+  top: -60px;
+}
+.grid-text1{
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem ;
+}
+.grid-text2,.grid-text3{
+  font-family: "Rajdhani", sans-serif;
+  font-size: 1rem ;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.grid-btn1{
+  font-family: "Raleway", sans-serif;
+  padding: 4px 16px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(36, 104, 231);
+}
